@@ -13,38 +13,31 @@ The robot starts at the coordinates (0, 0), and there are four markers in the en
 
 
 ## Required Packages
+This project depends on few packages:
 
-To run the project, download the following ROS packages in your work space:
-
-- **ArUco:** Download the ArUco package for ROS Noetic.
-```bash
-git clone https://github.com/CarmineD8/aruco_ros
-```
-
-    If using a ROS Melodic-enabled ROSbot:
-    ```bash
-    git clone https://github.com/pal-robotics/aruco_ros
-    git checkout melodic-devel
-    ```
+- **ArUco:**
+You can download it from the link below: 
+https://github.com/CarmineD8/aruco_ros
     
-- **ROSbot Model:** Obtain the ROSbot model for simulation and branch on noetic.
-```bash
-git clone https://github.com/husarion/rosbot_ros
-```
+- **ROSbot Model:**
+You can download it from the link below: 
+https://github.com/husarion/rosbot_ros
+
     
-- **OpenCV:** Download the ROS-compatible version (Noetic) if not present. 
+- **OpenCV:**
+You can download it from the link below:  
+https://github.com/ros-perception/vision_opencv
+
+
+
+To download this project you need to enter following command in your root directory:
+  
 ```bash
-git clone https://github.com/ros-perception/vision_opencv
+git clone https://github.com/shimaamiri/Experimental_Assignment1.git
 ```
-
-
-- **Assignment Package:** 
-The package contains two branches:
-- **main:** For the ROSbot implementation with a fixed camera.
-- **simulation:** For simulation implementation with a fixed camera.
-
+Then you need to build the project in root directory:
 ```bash
-git clone https://github.com/giuliab00/exp1
+catkin_make
 ```
 
 ## Architecture and Pseudocode
