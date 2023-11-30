@@ -37,7 +37,7 @@ This project depends on few packages which are included in the whole package:
 
 
 
-## Architecture and Pseudocode
+## Architecture
 
  This project consists of two nodes:
 - **Robot_controller Node:** Controls robot behavior and its written in python.
@@ -51,7 +51,7 @@ Here you can see rqt graph and figure out nodes relations:
 
 ### Pseudocode
 
-You can find the Pseudocode here:
+You can find the Pseudocode of Robot_controller node:
 
 ```python
 
@@ -145,7 +145,9 @@ roslaunch rosbot_bringup assignment.launch
 ```
 ### Video
 
-Here is the simulation video: [Video Link](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/simulation.mp4)
+Here is the simulation video: 
+
+https://github.com/shimaamiri/Experimental_Assignment1/blob/master/simulation.mp4
 
 ## Real robot Implementation 
 
@@ -164,7 +166,9 @@ roslaunch rosbot_bringup assignment.launch
 
 ### Video
 
-Here is the real robot video: [Video Link](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/real_robot.mp4)
+Here is the real robot video: 
+
+https://github.com/shimaamiri/Experimental_Assignment1/blob/master/real_robot.mp4
 
 
 ## Drawback and Possible improvements
