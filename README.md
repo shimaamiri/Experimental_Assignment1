@@ -2,16 +2,16 @@
 
 ## Authors
 
-- Shima Amiri Fard 5962794
+- Shima Amiri Fard 
 
 
-- Mohammadreza Koolani 5
+- Mohammadreza Koolani 
 
 
-- Mohammad Saboori 5
+- Mohammad Saboori 
 
 
-- Reza Taleshi 5
+- Reza Taleshi 
 
 ## Introduction
 
@@ -47,8 +47,7 @@ This project depends on few packages which are included in the whole package:
 ### Rqt Graph
 
 Here you can see rqt graph and figure out nodes relations:
-
-[Rqt](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/rosgraph.png)
+![rqt](rosgraph.png)
 
 ### Pseudocode
 
