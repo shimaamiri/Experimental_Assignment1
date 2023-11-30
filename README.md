@@ -5,7 +5,7 @@
 - Shima Amiri Fard, 5269794
 
 
-- Mohammadreza Koolani, 5
+- Mohammadreza Koolani, 5467640
 
 
 - Mohammad Sabouri, 5659227
@@ -150,7 +150,7 @@ roslaunch rosbot_bringup assignment.launch
 
 Here is the simulation video: 
 
-([Video](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/real.mp4) 
+[![Watch here](simulation.gif)](https://youtu.be/CN031iupbz8?si=qhbarW10anAkJu2S)
 
 ## Real robot Implementation 
 
@@ -171,7 +171,7 @@ roslaunch rosbot_bringup assignment.launch
 
 Here is the real robot video: 
 
-([Video](https://youtu.be/g6Qjz7wffTg)) 
+[![Watch here](real.gif)](https://youtu.be/g6Qjz7wffTg?si=LhuIllJXepSKKEYV)
 
 ## Drawback and Possible improvements
 
