@@ -2,20 +2,21 @@
 
 ## Authors
 
-- Shima Amiri Fard 
+- Shima Amiri Fard, 5269794
 
 
-- Mohammadreza Koolani 
+- Mohammadreza Koolani, 5
 
 
-- Mohammad Saboori 
+- Mohammad Sabouri, 5659227
 
 
-- Reza Taleshi 
+- Reza Taleshi, 5029729
 
 ## Introduction
 
-This assignment focuses on the utilization of a ROSbot to navigate an environment, locating and reaching four distinct Aruco markers. The task involves implementing this functionality initially in a simulated environment using Gazebo with a ROSbot equipped with a fixed camera. Subsequently, the solution is adapted for a real ROSbot in the laboratory setting. 
+This project focuses on localizing, navigation and detecting four Aruco markers by a Rosbot in Gazebo simulation and with real robotm, which has a fixed camera.
+
 
 The robot starts at the coordinates (0, 0), and there are four markers in the environment with IDs 11, 12, 13, and 15. The markers have the following meanings:
 - Marker 11: Rotate until you find Marker 12; then reach Marker 12.
@@ -47,6 +48,8 @@ This project depends on few packages which are included in the whole package:
 ### Rqt Graph
 
 Here you can see rqt graph and figure out nodes relations:
+
+
 ![rqt](rosgraph.png)
 
 ### Pseudocode
