@@ -1,6 +1,6 @@
 # Experimental Robotics Laboratory - Assignment 1
 
-## Authors
+## 
 
 - Shima Amiri Fard, 5269794
 
@@ -41,8 +41,8 @@ This project depends on few packages which are included in the whole package:
 ## Architecture
 
  This project consists of two nodes:
-- **Robot_controller Node:** Controls robot behavior and its written in python.
-- **Marker_publisher Node:** Detects Aruco markers and communicates information to the robot_controller node using a custum message called **Info.msg**. This node is the modified version of Marker_publish.cpp from Aruco package.
+- **Robot_controller Node:** Controls robot behavior and its written in python (its in **rosbot_bringup/scripts** folder).
+- **Marker_publisher Node:** Detects Aruco markers and communicates information to the robot_controller node using a custum message called **Info.msg**. This node is the modified version of Marker_publish.cpp from Aruco package (its in **aruco_ros/src** folder).
 
 
 ### Rqt Graph
