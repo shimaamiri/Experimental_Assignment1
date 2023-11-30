@@ -156,15 +156,12 @@ Here is the simulation video:
 
 ### How to Run
 
-In the assignment package go to the main branch then follow one of the following methods to run the code with real robot.
 
-- Share the ROS master with the ROSbot and execute the code from your PC. Ensure both are on the same network, and set the ROS_MASTER IP to match the ROSbot's.
-- Install the package directly on the ROSbot, considering it has ROS Melodic and OpenCV installed.
+you can install the package directly on the rosbot and run the following command to run the robot drivers first, then considering that rosbot has ROS Melodic and OpenCV installed just run the two nodes.
 
-Finally run the same launch file as in the simulation:
 
 ```bash
-roslaunch rosbot_bringup assignment.launch
+ roslaunch tutorial_pkgall.launch
 ```
 
 ### Video
