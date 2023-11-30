@@ -16,18 +16,13 @@ The robot starts at the coordinates (0, 0), and there are four markers in the en
 This project depends on few packages:
 
 - **ArUco:**
-You can download it from the link below: 
-https://github.com/CarmineD8/aruco_ros
+You can download it here ([ArUco](https://github.com/CarmineD8/aruco_ros)) 
     
 - **ROSbot Model:**
-You can download it from the link below: 
-https://github.com/husarion/rosbot_ros
-
+You can download it here ([ROSbot Model](https://github.com/husarion/rosbot_ros)) 
     
 - **OpenCV:**
-You can download it from the link below:  
-https://github.com/ros-perception/vision_opencv
-
+You can download it here ([OpenCV](https://github.com/ros-perception/vision_opencv))  
 
 
 To download this project you need to enter following command in your root directory:
@@ -121,6 +116,17 @@ Main:
         Pass (do nothing)
 ```
 
+## Simulation implementation
+
+### How to Run 
+
+```bash
+roslaunch rosbot_bringup assignment.launch
+```
+### Video
+
+Here is the simulation video: [Video Link](https://github.com/shimaamiri/exp1/assets/114082533/557a6603-cb2d-4cb0-8ea1-5774017435cc)
+
 ## Real robot Implementation 
 
 ### How to Run
@@ -141,22 +147,11 @@ roslaunch rosbot_bringup assignment.launch
 Here is the real robot video: [Video Link](https://github.com/shimaamiri/exp1/assets/114082533/557a6603-cb2d-4cb0-8ea1-5774017435cc)
 
 
-## Simulation implementation
-
-### How to Run 
-
-```bash
-roslaunch rosbot_bringup assignment.launch
-```
-### Video
-
-Here is the simulation video: [Video Link](https://github.com/shimaamiri/exp1/assets/114082533/557a6603-cb2d-4cb0-8ea1-5774017435cc)
-
 ## Drawback and Possible improvements
 
 ## Authors
 
-Shima Amiri Fard       5962794
-Mohammadreza Koolani   
-Mohammad Saboori
-Reza Taleshi
+-Shima Amiri Fard       5962794
+-Mohammadreza Koolani   5
+-Mohammad Saboori       5
+-Reza Taleshi           5
