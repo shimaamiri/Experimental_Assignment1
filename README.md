@@ -1,8 +1,9 @@
 # Experimental Robotics Laboratory - Assignment 1
 
-## Project Description
+## Introduction
 
 This assignment focuses on the utilization of a ROSbot to navigate an environment, locating and reaching four distinct Aruco markers. The task involves implementing this functionality initially in a simulated environment using Gazebo with a ROSbot equipped with a fixed camera. Subsequently, the solution is adapted for a real ROSbot in the laboratory setting. 
+
 The robot starts at the coordinates (0, 0), and there are four markers in the environment with IDs 11, 12, 13, and 15. The markers have the following meanings:
 - Marker 11: Rotate until you find Marker 12; then reach Marker 12.
 - Marker 12: Rotate until you find Marker 13; then reach Marker 13.
@@ -151,7 +152,13 @@ Here is the real robot video: [Video Link](https://github.com/shimaamiri/exp1/as
 
 ## Authors
 
--Shima Amiri Fard       5962794
--Mohammadreza Koolani   5
--Mohammad Saboori       5
--Reza Taleshi           5
+-Shima Amiri Fard 5962794
+
+
+-Mohammadreza Koolani 5
+
+
+-Mohammad Saboori 5
+
+
+-Reza Taleshi 5
