@@ -1,5 +1,18 @@
 # Experimental Robotics Laboratory - Assignment 1
 
+## Authors
+
+- Shima Amiri Fard 5962794
+
+
+- Mohammadreza Koolani 5
+
+
+- Mohammad Saboori 5
+
+
+- Reza Taleshi 5
+
 ## Introduction
 
 This assignment focuses on the utilization of a ROSbot to navigate an environment, locating and reaching four distinct Aruco markers. The task involves implementing this functionality initially in a simulated environment using Gazebo with a ROSbot equipped with a fixed camera. Subsequently, the solution is adapted for a real ROSbot in the laboratory setting. 
@@ -16,20 +29,11 @@ The robot starts at the coordinates (0, 0), and there are four markers in the en
 ## Required Packages
 This project depends on few packages which are included in the whole package:
 
-- **ArUco:** The ARUCO Library has been developed by the Ava group of the Univeristy of Cordoba(Spain).  It provides real-time marker based 3D pose estimation using AR markers.
-
-  
-You can download it here ([ArUco](https://github.com/CarmineD8/aruco_ros)) 
+- **ArUco:** The ARUCO Library has been developed by the Ava group of the Univeristy of Cordoba(Spain).  It provides real-time marker based 3D pose estimation using AR markers. You can download it here ([ArUco](https://github.com/CarmineD8/aruco_ros)) 
     
-- **ROSbot Model:** Meta package that contains all packages of Rosbot 2 an Rosbot 2R PRO inclusing rosbot_bringup, rosbot_description, rosbot_gazebo and rosbot_controller .
-
-  
-You can download it here ([ROSbot Model](https://github.com/husarion/rosbot_ros)) 
+- **ROSbot Model:** Meta package that contains all packages of Rosbot 2 an Rosbot 2R PRO inclusing rosbot_bringup, rosbot_description, rosbot_gazebo and rosbot_controller . You can download it here ([ROSbot Model](https://github.com/husarion/rosbot_ros)) 
     
-- **OpenCV:** a package which contains packages to interface ROS 2 with OpenCV which is a library designed for computational efficiency and strong focus for real time computer vision applications.
-
-  
-You can download it here ([OpenCV](https://github.com/ros-perception/vision_opencv))  
+- **OpenCV:** a package which contains packages to interface ROS 2 with OpenCV which is a library designed for computational efficiency and strong focus for real time computer vision applications.You can download it here ([OpenCV](https://github.com/ros-perception/vision_opencv))  
 
 
 
@@ -39,7 +43,16 @@ You can download it here ([OpenCV](https://github.com/ros-perception/vision_open
 - **Robot_controller Node:** Controls robot behavior and its written in python.
 - **Marker_publisher Node:** Detects Aruco markers and communicates information to the robot_controller node using a custum message called **Info.msg**. This node is the modified version of Marker_publish.cpp from Aruco package.
 
-You can find the **Pseudocode** in the following:
+
+### Rqt Graph
+
+Here you can see rqt graph and figure out nodes relations:
+
+[Rqt](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/rosgraph.png)
+
+### Pseudocode
+
+You can find the Pseudocode here:
 
 ```python
 
@@ -126,13 +139,14 @@ catkin_make
 ```
 
 ### How to Run 
+To run the program you need to launch the package launch file which is located in the rosbot_bringup/launch folder:
 
 ```bash
 roslaunch rosbot_bringup assignment.launch
 ```
 ### Video
 
-Here is the simulation video: [Video Link](https://github.com/shimaamiri/exp1/assets/114082533/557a6603-cb2d-4cb0-8ea1-5774017435cc)
+Here is the simulation video: [Video Link](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/simulation.mp4)
 
 ## Real robot Implementation 
 
@@ -140,10 +154,10 @@ Here is the simulation video: [Video Link](https://github.com/shimaamiri/exp1/as
 
 In the assignment package go to the main branch then follow one of the following methods to run the code with real robot.
 
-1. Share the ROS master with the ROSbot and execute the code from your PC. Ensure both are on the same network, and set the ROS_MASTER IP to match the ROSbot's.
-2. Install the package directly on the ROSbot, considering it has ROS Melodic and OpenCV installed.
+- Share the ROS master with the ROSbot and execute the code from your PC. Ensure both are on the same network, and set the ROS_MASTER IP to match the ROSbot's.
+- Install the package directly on the ROSbot, considering it has ROS Melodic and OpenCV installed.
 
-Finally run the dedicated launch file:
+Finally run the same launch file as in the simulation:
 
 ```bash
 roslaunch rosbot_bringup assignment.launch
@@ -151,28 +165,17 @@ roslaunch rosbot_bringup assignment.launch
 
 ### Video
 
-Here is the real robot video: [Video Link](https://github.com/shimaamiri/exp1/assets/114082533/557a6603-cb2d-4cb0-8ea1-5774017435cc)
+Here is the real robot video: [Video Link](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/real_robot.mp4)
 
 
 ## Drawback and Possible improvements
 
--In the simulation in ubuntu, robot couldnt detect the marker 12 so we used to manually change robot or marker position inorder to detect it. But, with Docker robot could easily detect marker 12. Also in reality, the robot could easily detect markers. This can be accounted as one the drawbacks of ArUco. Therefore, a possible improvement can be using OpenCv functionalities rather than relying on Aruco.
+- In the simulation in ubuntu, robot couldnt detect the marker 12 so we used to manually change robot or marker position inorder to detect it. But, with Docker robot could easily detect marker 12. Also in reality, the robot could easily detect markers. This can be accounted as one the drawbacks of ArUco. Therefore, a possible improvement can be using OpenCv functionalities rather than relying on Aruco.
 
 
--One possible improvement can be defining a controler which control the robot speed depending on the error.
+- One possible improvement can be defining a controler which control the robot speed depending on the error.
 
 
--Instead of reaching the markers sequentially and searching for next marker, a possible improvement can be associating each marker with a certain instruction that once the robot reach each marker does a specific task. 
-
-## Authors
-
--Shima Amiri Fard 5962794
+- Instead of reaching the markers sequentially and searching for next marker, a possible improvement can be associating each marker with a certain instruction that once the robot reach each marker does a specific task. 
 
 
--Mohammadreza Koolani 5
-
-
--Mohammad Saboori 5
-
-
--Reza Taleshi 5
