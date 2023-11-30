@@ -14,35 +14,32 @@ The robot starts at the coordinates (0, 0), and there are four markers in the en
 
 
 ## Required Packages
-This project depends on few packages:
+This project depends on few packages which are included in the whole package:
 
-- **ArUco:**
+- **ArUco:** The ARUCO Library has been developed by the Ava group of the Univeristy of Cordoba(Spain).  It provides real-time marker based 3D pose estimation using AR markers.
+
+  
 You can download it here ([ArUco](https://github.com/CarmineD8/aruco_ros)) 
     
-- **ROSbot Model:**
+- **ROSbot Model:** Meta package that contains all packages of Rosbot 2 an Rosbot 2R PRO inclusing rosbot_bringup, rosbot_description, rosbot_gazebo and rosbot_controller .
+
+  
 You can download it here ([ROSbot Model](https://github.com/husarion/rosbot_ros)) 
     
-- **OpenCV:**
+- **OpenCV:** a package which contains packages to interface ROS 2 with OpenCV which is a library designed for computational efficiency and strong focus for real time computer vision applications.
+
+  
 You can download it here ([OpenCV](https://github.com/ros-perception/vision_opencv))  
 
 
-To download this project you need to enter following command in your root directory:
-  
-```bash
-git clone https://github.com/shimaamiri/Experimental_Assignment1.git
-```
-Then you need to build the project in root directory:
-```bash
-catkin_make
-```
 
 ## Architecture and Pseudocode
 
  This project consists of two nodes:
 - **Robot_controller Node:** Controls robot behavior and its written in python.
-- **Marker_publisher Node:** Detects Aruco markers and communicates information to the robot_controller node using a custum message called **Info**. This node is the modified version of Marker_publish.cpp from Aruco package.
+- **Marker_publisher Node:** Detects Aruco markers and communicates information to the robot_controller node using a custum message called **Info.msg**. This node is the modified version of Marker_publish.cpp from Aruco package.
 
-You can find the pseudocode in the following:
+You can find the **Pseudocode** in the following:
 
 ```python
 
@@ -118,6 +115,15 @@ Main:
 ```
 
 ## Simulation implementation
+
+To download this project, you need to first clone the project: 
+```bash
+git clone https://github.com/shimaamiri/Experimental_Assignment1.git
+```
+Then, you need to build the project in the root directory:
+```bash
+catkin_make
+```
 
 ### How to Run 
 
