@@ -54,6 +54,9 @@ git clone https://github.com/giuliab00/exp1
 - **Marker_publisher Node:** Detects Aruco markers and communicates information to the robot_controller node using a custum message called **Info**. This node is the modified version of Marker_publish.cpp from Aruco package.
 
 You can find the pseudocode in the following:
+
+```python
+
 Initialize ROS node
 
 Define a class for RobotController:
@@ -123,7 +126,7 @@ Main:
         Call the main_loop function on the instance
     Except rospy.ROSInterruptException:
         Pass (do nothing)
-
+```
 
 ## Real robot Implementation 
 
