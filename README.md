@@ -156,6 +156,14 @@ Here is the real robot video: [Video Link](https://github.com/shimaamiri/exp1/as
 
 ## Drawback and Possible improvements
 
+-In the simulation in ubuntu, robot couldnt detect the marker 12 so we used to manually change robot or marker position inorder to detect it. But, with Docker robot could easily detect marker 12. Also in reality, the robot could easily detect markers. This can be accounted as one the drawbacks of ArUco. Therefore, a possible improvement can be using OpenCv functionalities rather than relying on Aruco.
+
+
+-One possible improvement can be defining a controler which control the robot speed depending on the error.
+
+
+-Instead of reaching the markers sequentially and searching for next marker, a possible improvement can be associating each marker with a certain instruction that once the robot reach each marker does a specific task. 
+
 ## Authors
 
 -Shima Amiri Fard 5962794
