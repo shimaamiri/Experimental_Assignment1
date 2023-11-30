@@ -150,7 +150,7 @@ roslaunch rosbot_bringup assignment.launch
 
 Here is the simulation video: 
 
-([Video](https://youtu.be/g6Qjz7wffTg)) 
+([Video](https://github.com/shimaamiri/Experimental_Assignment1/blob/master/real.mp4) 
 
 ## Real robot Implementation 
 
